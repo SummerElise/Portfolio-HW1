@@ -5,15 +5,21 @@
     --grey: #dad7d7; 
 }
 
+body {
+    background-color: var(--grey);
+    color: var(--dark);
+    font-style: var(--font);
+}
+
 #header-links, #contact-links {
-    padding-top: 15px;
+    padding-top: 35px;
 }
 
 #header-links a, #contact-links a {
   font-size: 30px;
   text-decoration: none;
   margin-right: 32px;
-  padding-bottom: 10px;
+  padding-top: 45px;
 }
 
 #header-links a  {
@@ -31,19 +37,74 @@
 
 .header2 {
     display: flex;
-    background-image: url("../images/yellow-metal-design-decoration(1).jpg");
-    height: 254px;    
+    background-image: url("../images/yellow-metal-design-decoration(1).jpg") no repeat;
+    height: 350px; 
+    margin: 0;     
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
 .header2 img {
+    position: absolute;    
+    top: 11%;    
+    max-width: 100%;
+    margin-top: 68px;
+}
+
+
+.block-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aside1, .content {
+    height: auto;
+    margin: 10px;
+}
+
+.content {
+    width: 85%;
+    border-left: var(--dark) solid 10px;
+    font-size: 20px;
+    word-spacing: 3px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.aside1 {
+    width: 15px;
+    font-size: 45px;
+    text-align: justify;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.project {
+    position: relative;
+    margin: 25px;
+    border: var(--dark) solid 8px;
+    font-size: 20px;
+}
+
+.information {
     position: absolute;
-    top: 10%;
-    left: 25%;
-    width: 500px;
-    height: 300px;
+    bottom: 25%;
+    padding-left: 30px;
+    background-color: var(--grey)
+}
+
+#name {
+    background-color: var(--grey);
+    font-size: 15px;
+    padding: 10px 20px 10px 50px;
+    border-radius: 0 20px 20px 0;
+}
+
+
+#project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
 }
 
 #contact-links {
