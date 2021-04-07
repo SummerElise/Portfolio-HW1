@@ -19,7 +19,7 @@ body {
   font-size: 30px;
   text-decoration: none;
   margin-right: 32px;
-  padding-top: 45px;
+  padding-top: 15px;
 }
 
 #header-links a  {
@@ -27,6 +27,10 @@ body {
     border-bottom: var(--grey) solid 3px;
 }
 
+#header-links a:hover {
+    background-color: var(--white);
+    color: var(--dark);
+}
 .header1 {
     display: flex;
     justify-content: space-between;
@@ -38,7 +42,7 @@ body {
 .header2 {
     display: flex;
     background-image: url("../images/yellow-metal-design-decoration(1).jpg") no repeat;
-    height: 350px; 
+    height: auto; 
     margin: 0;     
     background-size: cover;
     background-position: center;
@@ -54,6 +58,7 @@ body {
 
 .block-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -63,12 +68,12 @@ body {
 }
 
 .content {
-    width: 85%;
-    border-left: var(--dark) solid 10px;
-    font-size: 20px;
-    word-spacing: 3px;
-    padding-left: 20px;
-    padding-top: 15px;
+    flex: 1;
+    background-color: var(--white);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .aside1 {
@@ -79,11 +84,16 @@ body {
     padding-top: 20px;
 }
 
-.project {
-    position: relative;
-    margin: 25px;
-    border: var(--dark) solid 8px;
-    font-size: 20px;
+.project {    
+    margin: 20px;
+    border: var(--dark) solid 6px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;  
+}
+
+.project > img {
+    width: 100%;
 }
 
 .information {
