@@ -2,9 +2,7 @@
     --dark: #303030;
     --white: #fff;
     --font: Georgia;
-    --grey: #dad7d7; 
-    --navy: #191970;
-    --lightblue: #ADD8E6;
+    --grey: #dad7d7;    
     --red: red;
     
 }
@@ -13,6 +11,11 @@ body {
     background-color: black;
     color: var(--white);
     font-style: var(--font);
+}
+
+main {
+    background-color: var(--dark);
+    color: var(--grey);
 }
 
 #navigation a {
@@ -28,42 +31,35 @@ body {
 }
 
 #navigation a {
-    color: var(--dark);
+    color: var(--grey);
 }
 
 
 #navigation a:hover {
-    color: var(--red);
-    transition: 0.5s;    
+    color: var(--dark);
+    transition: 0.8s; 
+    background-color: var(--grey);
+    border-bottom: var(--grey) solid 3px;  
 }
 
 #navigation a, #Contact-links a {
     font-size: 22px;
-    text-decoration: none;
-    margin-right: 35px;
-    margin-top: 10px;
-    padding-bottom: 5px;
+    text-decoration: none;    
     display: inline-flex;
-}
-
-#navigation a, #Contact-links a {
-    display: flex;
-    text-decoration: underline; 
-    padding-bottom: 5px;  
-    font-size: 30px;
     margin-right: 30px;
-    margin-top: 10px;  
+    margin-top: 10px; 
+    padding-bottom: 5px;  
 }
 
 #Contact-links {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 #Contact-links a {
     color: var(--grey)   
-    border-bottom: var(--grey) solid 5px;
+    border-bottom: var(--grey) solid 3px;
     font-size: 22px;
 }
 
@@ -72,8 +68,8 @@ body {
 }
 
 #Contact-links a:hover {
-    color: var(--red);
-    background-color: var(--dark);
+    color: var(--dark);
+    background-color: var(--grey);
     padding: 5px;
     border-radius: 5px;
 }
@@ -82,49 +78,43 @@ body {
     padding-top: 15px;
 }
 
-main {
-    background-color: var(--dark);
-    color: var(--grey);
-}
-
 #name {
     background-color: var(--grey);
     color: var(--dark);
     font-size: 48px;
-    right: 48px;
-    bottom: 48px;
-    margin-top: 10px;
-    margin-right: 28px;
     padding: 10px, 20px, 10px, 60px;
     border-radius: 0 20px 20px 0;
-}
-
-.header1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0px;    
-    background: var(--grey);
-    color: var(--dark);
-    flex-wrap: wrap;
 }
 
 #subtitle {
     background-color: var(--grey);
     color: var(--dark);
-    font-size: 48px;
-    right: 50px;
-    bottom: 50px;
+    font-size: 40px;
+    right: 48px;
+    bottom: 48px;
     padding: 10px;
+    border-radius: 20px;
+    margin-top: 100xpx;
+    margin-right: 30px;
+}
+
+
+.header1  {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;      
+    flex-wrap: wrap;
+    background-color:var(--dark);
+    color: var(--grey);
+    
 }
 
 .header2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-image: url("../images/tech-3041437_1920.jpg");
-    background-position: center;
-    background-size: cover;
+    display: flex;   
     height: auto;
+    width: 100%;   
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header2 div {
@@ -133,30 +123,36 @@ main {
 
 .aside1, .content {
     height: auto;
-    margin: 28px 0px;
+    margin: 30px 0px;
 }
 
+.aside1 {
+    font-size: 55px;
+}
 .block-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;  
 }
 
 .content {
     width: 70%;
     font-size: 24px;
-    border-left: var(--white) solid 6px;    
-    padding-left: 48px;
+    border-left: var(--white) solid 5px;    
+    padding-left: 50px;
     word-spacing: 6px;
 }
 
-.aside1 {
-    width: 25%;
-    font-size: 64px;
-    text-align: right;    
+.content p {
+    line-height: 24px;
+}
+
+#box2 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project {    
-   border: var(--grey) solid 5px;
+   border: var(--dark) solid 2px;
    margin: 18px;
    position: relative;
 }
@@ -165,46 +161,100 @@ main {
     position: relative;
     flex: 43%;
     margin: 1%;
-    border: var(--grey);
+    border: var(--grey) solid 4px;
 }
 
 .projects2 img {
     width: 100%;
-    min-width: 150px;
+    min-width: 150px;    
 }
 
 .projects2 img:hover {
-    transition: .6s ease-in-out;
-    opacity: 0.7;
-}
-
-#projects {
-    display: flex;  
-    flex-wrap: wrap;
+   border: solid 5px navy;
+   margin: -2px;   
 }
 
 .information {
     position: absolute;
-    bottom: 34%;
+    bottom: 40%;
     padding-left: 20px;
+    padding-right: 11px;
     background-color: var(--dark);
 }
 
 .information h4 {
-    font-size: 22px;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4px;
 }
 
-@media all and (max-width: 992px) {
-    main {
-        background: #ffff00;
+
+@media screen and (max-width: 950px) {
+
+    #subtitle {
+        margin-top: 0;
+        margin-right: 30px;
+        font-size: 32px;
+        border-radius: 15px;
+        float: left;
     }
+
+    .header2 {
+            flex-direction: column;
+        }
 }
 
-@media all and (max-width: 992px) {
-    #projects {
-        
+@media screen and (max-width: 800px) {
+    #Contact-links a {
+        font-size: 16px;
+    }
+
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 50%;
+        border-left: none;
+        font-size: 20px;
+    }
+
+    .block-section {
         flex-direction: column;
+        justify-content: center;        
+    }
+
+    .aside {
+        text-align: center;
+        width: 100%;
+        font-size: 48px;
+        text-decoration: dotted;
+    }
+
+  
     }
 }
-                                 
+    
+@media screen and (max-width: 425px) {
+    .information {
+        background-color: var(--dark);
+        padding-bottom: 4px;
+        bottom: 31%;
+        position: unset;
+    }
+
+    .information h3 {
+        font-size: 16px;
+    }
+
+    .information h4 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    #Contact-links {
+        justify-content: flex-start;
+    }
+
+    .content p {
+        font-size: 12px;     
+    }
+     
