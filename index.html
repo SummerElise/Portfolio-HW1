@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Added additional 'meta' links for better responsiveness with various screen sizes-->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,6 +10,8 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Summer's Portfolio</title>
 </head>
+
+<!--Main header with navigation bar-->
 <body>
     <header class="header1">
         <div id="name">
@@ -16,27 +19,31 @@
         </div>  
 
         <nav id="navigation">            
-                <a href="#About-me">About me</a>                
-                <a href="#Work">Work</a>               
-                <a href="#Contact-links">Contact me</a>  
+            <a href="#About-me">About me</a>                
+            <a href="#Work">Work</a>               
+            <a href="#Contact-links">Contact me</a>  
         </nav>
     </header>
 
+    <!--Second header with subtitle and portrait-->
     <header class="header2">  
         <div><img src="./images/me.jpg" alt="Self Portrait" width="200px" height="200px"></div>  
         <div>
-         <h2 id="subtitle">Web Developer</h2>
-         </div>            
+            <h2 id="subtitle">Web Developer</h2>
+        </div>            
     </header>
+
+    <!--Main content containing 'About Me', 'Work', and 'Contact me'-->
     <main>
+        <!--First 'block-section'-->
         <section class="block-section">
-            <aside class="aside1" id="About-me">
-                <h3>
+          <aside class="aside1" id="About-me">
+            <h3>
                     About Me
-                </h3>
-            </aside>   
+            </h3>
+          </aside>   
         <section class="content">
-           <p>
+            <p>
                 I originally was in school to enter the medical field, but due to the pandemic, I switched my career path towards Web development. I would
                 like to eventually get my Bachelors degree in Computer Science. I am taking the credits that I have earned in the past years and combining them 
                 to get an Associates in Engineering.
@@ -46,71 +53,72 @@
                 in the gym every other evening. I have recently delved into the world of gaming. I currently play League of Legends and Call of Duty-Black Ops. 
             </p>
         </section>
-        </section>     
+        </section>
+        <!--Second 'block-section'-->     
         <section class="block-section">             
-             <aside class="aside1" id="Work">
-                <h3>
+          <aside class="aside1" id="Work">
+            <h3>
                     Work
-                </h3>
-            </aside>
+            </h3>
+          </aside>
         <section class="content" id="projects">
-            <section class="project" id="box1">
-                <section class="projects2">
-            <div class="information">  
-                <h3>Horiseon</h3>    
-                <h4>Refactored Code</h4>            
-                </div>
-                <a href="https://summerelise.github.io/Code-Refactor/" target="_blank"><img src="./images/HW1 image.PNG" alt="HW"/></a>
-            </section>
-            </section>
+        <section class="project" id="box1">
+        <section class="projects2">
+          <div class="information">  
+            <h3>Horiseon</h3>    
+            <h4>Refactored Code</h4>            
+        </div>
+               <a href="https://summerelise.github.io/Code-Refactor/" target="_blank"><img src="./images/HW1 image.PNG" alt="HW"/></a>
+        </section>
+        </section>
         <section class="project" id="box2">
-            <section class="projects2">
-            <div class="information">
-                <h3>LED Wall</h3>
-                <h4>Node/IoT</h4>            
-            </div>
+        <section class="projects2">
+          <div class="information">
+            <h3>LED Wall</h3>
+            <h4>Node/IoT</h4>            
+        </div>
                 <a href="#"><img src="./images/cubes-2492010_1920.jpg" alt="cubes" width="300px" height="300px"/></a>                
         </section>
         <section class="projects2">            
-            <div class="information">
-                <h3>Calculator</h3>
-                <h4>React/Javascript/CSS</h4>
-            </div>
+          <div class="information">
+            <h3>Calculator</h3>
+            <h4>React/Javascript/CSS</h4>
+        </div>
                 <a href="#"><img src="./images/network-4636686_1920.jpg" alt="network" width="300px" height="300px"/></a>
         </section>
         <section class="projects2">            
-            <div class="information">
-                <h3>Pastel Puzzles</h3>
-                <h4>MERN Stack</h4>
-            </div>
+          <div class="information">
+            <h3>Pastel Puzzles</h3>
+            <h4>MERN Stack</h4>
+        </div>
                 <a href="#"><img src="./images/ball-63527_1920.jpg" alt="ball" width="300px" height="300px"/></a>
         </section>
         <section class="projects2">
-            <div class="information">
-                <h3>Run Buddy</h3>
-                <h4>MERN Stack</h4>
-            </div>
+          <div class="information">
+            <h3>Run Buddy</h3>
+            <h4>MERN Stack</h4>
+        </div>
                 <a href="#"><img src="./images/pexels-markus-spiske-1089440.jpg" alt="pexels" width="300px" height="300px"/></a>
-            </section>
+          </section>
+         </section>
         </section>
-    </section>
-    </section>
+       </section>
 
-  
-    <section class="block-section" id="contact-me">     
-            <aside class="aside1">
-                <h3>
+    <!--Third 'block-section'; Contact-links-->
+        <section class="block-section" id="contact-me">     
+          <aside class="aside1">
+            <h3>
                     Contact Me
-                </h3>
-            </aside>        
+            </h3>
+          </aside>        
         <section class="contact-content">
-            <nav id="Contact-links">                
+          <nav id="Contact-links">                
                 <a href="#">555.555.5555</a>
                 <a href="mailto:slissy513@gmail.com">slissy513@gmail.com</a>
                 <a href="https://github.com/SummerElise" target="_blank">Github</a>                
                 <a href="https://www.linkedin.com/in/summer-milner/" target="_blank">Linkedin</a>
-            </nav>    
-            </section>                
+          </nav>    
+        </section>                
         </section>
     </main>
 </body>

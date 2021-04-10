@@ -3,8 +3,7 @@
     --white: #fff;
     --font: Georgia;
     --grey: #dad7d7;    
-    --red: red;
-    
+    --red: red;    
 }
 
 body {
@@ -23,25 +22,26 @@ main {
     border-bottom: var(--grey);
 }
 
+/*Used 'auto' to take up space within the nav links*/ 
 .navigation {
     display: flex;
     margin: auto;
-    height:auto;   
-
+    height:auto;
 }
 
 #navigation a {
     color: var(--grey);
 }
 
-
 #navigation a:hover {
     color: var(--dark);
     transition: 0.8s; 
     background-color: var(--grey);
-    border-bottom: var(--grey) solid 3px;  
+    border-bottom: var(--dark) solid 3px; 
+    border-radius: 5px; 
 }
 
+/*Used an'inline-flex' to make flex container an inline element*/
 #navigation a, #Contact-links a {
     font-size: 22px;
     text-decoration: none;    
@@ -129,6 +129,7 @@ main {
 .aside1 {
     font-size: 55px;
 }
+
 .block-section {
     display: flex;
     justify-content: space-around;  
@@ -188,7 +189,7 @@ main {
     margin-top: 4px;
 }
 
-
+/* Used media queries to be adjust my webpage to different screen sizes.*/
 @media screen and (max-width: 950px) {
 
     #subtitle {
@@ -226,10 +227,6 @@ main {
         text-align: center;
         width: 100%;
         font-size: 48px;
-        text-decoration: dotted;
-    }
-
-  
     }
 }
     
@@ -250,11 +247,13 @@ main {
         font-size: 12px;
     }
 
+    /*Made Contact-links more centered*/
     #Contact-links {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .content p {
         font-size: 12px;     
     }
+}
      
