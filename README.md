@@ -21,3 +21,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 You can find the live website here: https://SummerElise.github.io/Portfolio-HW1/
 
 The functionality should be similar to the example given below: 
+![02-advanced-css-homework-demo](https://user-images.githubusercontent.com/80479850/114291796-23999780-9a58-11eb-8ee4-6f621f3d3e3b.gif)
