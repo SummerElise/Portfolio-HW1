@@ -7,6 +7,7 @@
     --dark-grey: #3F3F3F;   
 }
 
+/* Used 'center' in text-align to remove unused space on the page */
 body {
     background-color: var(--grey);
     color: var(--white);
@@ -23,6 +24,7 @@ main {
    
 }
 
+/* Left 60% to visually enhance the header */
 #navigation {
     display: inline-flex;
     position: relative;
@@ -56,6 +58,7 @@ main {
     padding-bottom: 5px;  
 }
 
+/* 'Space-evenly' was used to remove crowding with 'Contact me' */
 #Contact-links {
     display: flex;
     justify-content: space-evenly;
@@ -94,14 +97,14 @@ main {
 
  #subtitle {
     background-color: var(--grey);
-    color: var(--dark);
-    justify-content: ;
+    color: var(--dark);    
     letter-spacing: 0.1em;
     margin-top: 6px;
    font-size: 30px;
    border-radius: 20px;    
 }
 
+/* 'width: auto' was used so the nav links would fit in the header */
 header {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -130,8 +133,7 @@ header h1 {
 
 .aside1 {
     height: 35%;    
-    font-size: 55px;
-    
+    font-size: 55px;    
     border-bottom-width: 1px solid var(--white);
     padding-bottom: 3px;
 }
@@ -203,6 +205,7 @@ margin: -2px;
 /* Used media queries to be adjust my webpage to different screen sizes.*/
 @media screen and (max-width: 950px) {
 
+    /*'text-align: center' was used so when different screen sizes were chosen, these elements would be centered */ 
     #subtitle {
         margin-top: 0;
         margin-right: 30px;
@@ -245,9 +248,7 @@ margin: -2px;
         border-left: none;
         font-size: 20px;
     }
-
-   
-    
+     
 
     #navigation {
         flex-direction: column;
@@ -300,7 +301,7 @@ margin: -2px;
         flex-direction: column;
        
     }
-
+    /* changed width to 100px to keep images a relative size */
     #projects, #projects2 img{
         display: flex;
         flex-direction: column;
@@ -311,4 +312,4 @@ margin: -2px;
        
     }
 
-    .     
+
