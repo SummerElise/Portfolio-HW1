@@ -19,3 +19,5 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 You can find the live website here: https://SummerElise.github.io/Portfolio-HW1/
+
+The functionality should be similar to the example given below: 
